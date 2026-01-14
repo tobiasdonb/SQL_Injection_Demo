@@ -1,9 +1,9 @@
 <<<<<<< HEAD
-# 🔓 Demo SQL Injection - Form Login
+#  Demo SQL Injection - Form Login
 
-> ⚠️ **PERINGATAN**: Kode ini SENGAJA dibuat vulnerable untuk keperluan **EDUKASI dan SIMULASI** saja. **JANGAN** gunakan di lingkungan production!
+>  **PERINGATAN**: Kode ini SENGAJA dibuat vulnerable untuk keperluan **EDUKASI dan SIMULASI** saja. **JANGAN** gunakan di lingkungan production!
 
-## 📁 Struktur File
+## Struktur File
 
 ```
 sql_injection_demo/
@@ -14,7 +14,7 @@ sql_injection_demo/
 └── README.md       # Dokumentasi ini
 ```
 
-## 🚀 Cara Setup
+## Cara Setup
 
 ### 1. Buat Database
 Jalankan query di `database.sql` menggunakan phpMyAdmin atau MySQL CLI:
@@ -40,7 +40,7 @@ $password = '';
 - Letakkan folder `sql_injection_demo` di `htdocs` (XAMPP) atau `www` (WAMP)
 - Akses via browser: `http://localhost/sql_injection_demo/`
 
-## 🎯 Contoh SQL Injection
+## Contoh SQL Injection
 
 ### 1. Bypass Login (di field Username)
 | Payload | Penjelasan |
@@ -62,7 +62,7 @@ $password = '';
 | `' UNION SELECT 1,2,3,4,5 --` | Cek jumlah kolom |
 | `' UNION SELECT id,username,password,email,5 FROM users --` | Ekstrak data |
 
-## 📝 Cara Kerja
+##  Cara Kerja
 
 Query vulnerable di `index.php`:
 ```php
@@ -76,7 +76,7 @@ SELECT * FROM users WHERE username='' OR '1'='1' AND password='...'
 
 Kondisi `'1'='1'` selalu TRUE, sehingga query mengembalikan data user.
 
-## 🛡️ Cara Mengamankan (Untuk Referensi)
+## Cara Mengamankan (Untuk Referensi)
 
 Gunakan **Prepared Statements**:
 ```php
@@ -85,7 +85,7 @@ $stmt->bind_param("ss", $username, $password);
 $stmt->execute();
 ```
 
-## 👤 User Sample
+##  User Sample
 
 | Username | Password |
 |----------|----------|

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔓 Demo SQL Injection - Form Login
 
 > ⚠️ **PERINGATAN**: Kode ini SENGAJA dibuat vulnerable untuk keperluan **EDUKASI dan SIMULASI** saja. **JANGAN** gunakan di lingkungan production!
@@ -97,3 +98,7 @@ $stmt->execute();
 ---
 
 **Dibuat untuk keperluan pembelajaran Keamanan Jaringan Komputer**
+=======
+# SQL_Injection_Demo
+Tugas Keamanan Jaringan untuk mendemonstrasikan form login yang rentan terkena SQL Injection
+>>>>>>> 9cf3353bd818ad0228abf4e4f55019a295757db9
